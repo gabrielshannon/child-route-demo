@@ -1,0 +1,15 @@
+<app-template-item
+  *ngFor="let templateEl of templates; let i = index"
+  [template]="templateEl"
+  [index]="i"
+></app-template-item>
+
+<br>
+<br>
+<button type="button" class="btn btn-blue">Add Primary Heading</button>
+<br>
+<br>
+<button type="button" class="btn btn-blue">Add Secondary Headin</button>
+<br>
+<br>
+<button type="button" class="btn btn-blue">Add paragraph</button>

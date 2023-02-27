@@ -1,0 +1,18 @@
+<div class="document-canvas flex-container">
+  <img
+    style="padding: 2px; max-height: 75px; margin: 24px"
+    [src]="template!.imagePath"
+    alt="{{ template!.name }}"
+  />
+  <div cdkDropList class="item-list" >
+    <app-doc-item cdkDrag></app-doc-item>
+    <app-doc-item cdkDrag></app-doc-item>
+    <app-doc-item cdkDrag></app-doc-item>
+  </div>
+  <!-- CONTENT HERE -->
+
+  <div class="footer-copyright text-center py-3">
+    © 2020 Copyright:
+    <a href="/"> {{ template!.footerString }}</a>
+  </div>
+</div>
